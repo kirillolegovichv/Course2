@@ -1,0 +1,12 @@
+﻿Console.WriteLine("Введите A: ");
+double a = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите B: ");
+double b = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите C: ");
+double c = Convert.ToDouble(Console.ReadLine());
+if (a >= b && b >= c && a >= c) Console.WriteLine($"{c} {b} {a}");
+else if (a <= b && b >= c && a >= c) Console.WriteLine($"{c} {a} {b}");
+else if (a <= b && b >= c && a <= c) Console.WriteLine($"{a} {c} {b}");
+else if (a <= b && b <= c && a <= c) Console.WriteLine($"{a} {b} {c}");
+else if (a >= b && b <= c && a <= c) Console.WriteLine($"{b} {a} {c}");
+else  Console.WriteLine($"{b} {c} {a}");
